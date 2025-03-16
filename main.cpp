@@ -4,36 +4,31 @@ using namespace std;
 
 int main()
 {
-    float salM;
-    float hrsT;
+    int idade;
 
-    float salB;
-    float valorHr;
-    float imposto;
-    float salR;
+    cout << " informe sua idade: ";
+    cin >> idade;
 
-    cout << " informe seu salario minimo: ";
-    cin >> salM;
-
-    cout << " informe suas horas trabalhadas: ";
-    cin >> hrsT;
-
-
-    valorHr = salM / 2;
-
-    salB = hrsT * valorHr;
-
-    imposto = (salB * 0.3)/ 100;
-
-    salR = salB - imposto;
-
-    cout << " valor da hora: " << valorHr << endl;
-    cout << " salario bruto: " << salB << endl;
-    cout << " imposto: " << imposto << endl;
-    cout << " salario a receber: " << salR << endl;
-
-
-
-
+    if (idade >= 5 && idade <= 7)
+    {
+        cout << " infantil A ";
+    }
+    else if ( idade >= 8 && idade <= 10 )
+    {
+        cout << " infantil B ";
+    }
+    else if ( idade >= 11 && idade <= 13 )
+    {
+         cout << "juvenil A";
+    }
+    else if ( idade >= 14 && idade <= 17 )
+    {
+        cout << " jivenil B ";
+    }
+    else
+    {
+        cout << " senior ";
+    }
+    return 0;
 
 }
