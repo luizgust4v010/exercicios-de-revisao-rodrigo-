@@ -4,31 +4,32 @@ using namespace std;
 
 int main()
 {
-    int idade;
+    float peso, altura, imc;
 
-    cout << " informe sua idade: ";
-    cin >> idade;
+    cout << " digite seu peso em KG ";
+    cin >> peso;
 
-    if (idade >= 5 && idade <= 7)
+    cout << " digite sua altura: ";
+    cin >> altura;
+
+    imc = peso / (altura * altura);
+
+    cout << " imc: " << imc << endl;
+
+    if (imc < 20)
     {
-        cout << " infantil A ";
+        cout << " abaixo do peso. " << endl;
     }
-    else if ( idade >= 8 && idade <= 10 )
+    else if ( imc >= 20 && imc < 25 )
     {
-        cout << " infantil B ";
-    }
-    else if ( idade >= 11 && idade <= 13 )
-    {
-         cout << "juvenil A";
-    }
-    else if ( idade >= 14 && idade <= 17 )
-    {
-        cout << " jivenil B ";
+        cout << " peso ideal. ";
     }
     else
     {
-        cout << " senior ";
+        " acima do peso. ";
     }
+
     return 0;
 
 }
+
